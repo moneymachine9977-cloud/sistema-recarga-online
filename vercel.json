@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/recarga",
+      "destination": "/recarga/index.html"
+    },
+    {
+      "source": "/recarga/",
+      "destination": "/recarga/index.html"
+    },
+    {
+      "source": "/recarga/indexa05a.html",
+      "destination": "/recarga/indexa05a.html"
+    },
+    {
+      "source": "/",
+      "destination": "/index.html"
+    }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
+}
