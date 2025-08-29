@@ -13,6 +13,9 @@
 }
 *{box-sizing:border-box}html,body{height:100%}body{margin:0;font:16px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg)}
 .container{max-width:620px;margin:0 auto}
+.top-section{background:#fff;padding:20px 18px;text-align:center;border-bottom:1px solid var(--border)}
+.logo-wrapper{display:flex;justify-content:center;align-items:center}
+.top-logo{max-width:300px;height:auto;border-radius:8px}
 .header{background:linear-gradient(135deg,var(--primary),#34A0FF);color:#fff;padding:28px 18px 22px;text-align:center}
 .header h1{margin:0;font-weight:800;font-size:1.6rem}
 .header p{margin:10px auto 0;max-width:36ch;opacity:.95}
@@ -41,8 +44,13 @@ fieldset{border:0;margin:0;padding:0}legend{position:absolute;left:-9999px}
 </head>
 <body>
 <div class="container">
+  <div class="top-section">
+    <div class="logo-wrapper">
+      <img src="logo.png" alt="Logo Recarga" class="top-logo">
+    </div>
+  </div>
+
   <header class="header" role="banner">
-    <h1>Recarga de Celular</h1>
     <p>Recarregue Vivo, Claro, TIM e Oi em segundos. Simples, seguro e 100% online.</p>
     <div class="badge" aria-label="Confirmação rápida">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
@@ -117,12 +125,12 @@ fieldset{border:0;margin:0;padding:0}legend{position:absolute;left:-9999px}
 <script>
 /* ======== Links de Checkout por Valor ======== */
 const CHECKOUT_LINKS = {
-  '20': 'https://pay.menudepagamentos.site/65XDZB8dYMPgVJw',
-  '30': 'https://pay.menudepagamentos.site/5pjw3Rn5W2K32lQ',
-  '40': 'https://pay.menudepagamentos.site/v7R0globxwzGVr9',
-  '50': 'https://pay.menudepagamentos.site/z0qn35d74PVg98m',
-  '60': 'https://pay.menudepagamentos.site/eApQgz2WD62gEb7',
-  '100': 'https://pay.menudepagamentos.site/lDW0ZaJ4QMaGN7E'
+  '20': 'https://checkout.centrodepagamento.online/checkout?product=4bd47bfc-8476-11f0-986a-46da4690ad53',
+  '30': 'https://checkout.centrodepagamento.online/checkout?product=5cb08743-8484-11f0-986a-46da4690ad53',
+  '40': 'https://checkout.centrodepagamento.online/checkout?product=3c2e2b6a-8484-11f0-986a-46da4690ad53',
+  '50': 'https://checkout.centrodepagamento.online/checkout?product=7b0ae03c-8484-11f0-986a-46da4690ad53',
+  '60': 'https://checkout.centrodepagamento.online/checkout?product=9ee12457-8484-11f0-986a-46da4690ad53',
+  '100': 'https://checkout.centrodepagamento.online/checkout?product=aa6ab9a5-8484-11f0-986a-46da4690ad53'
 };
 
 /* ======== Helpers ======== */
